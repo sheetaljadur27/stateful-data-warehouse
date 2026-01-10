@@ -35,5 +35,28 @@ stateful-data-warehouse/
 - Clear separation of concerns
 - Stateful data flow across layers
 - Scalability and maintainability of the warehouse design
+## Infrastructure: Containerized FHIR Warehouse
+
+The FHIR warehouse is implemented using the HAPI FHIR JPA server, deployed in a Docker container 
+to ensure a consistent and reproducible runtime environment.
+
+**Docker Advantages:**
+- Eliminates dependency issues with Java, database versions, and operating systems.
+- Ensures the FHIR server behaves identically on different machines.
+- Provides a self-contained, isolated environment for the server.
+
+**Port Mapping:**
+- The container’s internal port `8080` is mapped to the host machine.
+- This allows the FHIR server to be accessed via a browser or client scripts at:
+  `http://localhost:8080/fhir`.
+
+**Statefulness and Reliability:**
+- The containerized server stores persistent data, ensuring that resources remain 
+  available throughout the migration process.
+- Using Docker allows for easy recreation of the environment without breaking dependencies.
+
+**Evidence:**
+- Docker container running successfully.
+- HAPI FHIR server accessible at the mapped host URL.
 
 
