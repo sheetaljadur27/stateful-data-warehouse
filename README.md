@@ -81,6 +81,7 @@ We created profiles for both **Patient** and **Observation** resources.
 ![FSH Compilation Success - Observation](Screenshots/observation_fsh.png)
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143705.png
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143801.png
+https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143921.png
 
 
 
