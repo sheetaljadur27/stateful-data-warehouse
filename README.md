@@ -61,6 +61,6 @@ to ensure a consistent and reproducible runtime environment.
 - ## Evidence
 
 ### Docker & FHIR Server Running
-![Docker and FHIR Evidence](screenshots/docker_fhir_running.png)
+![Docker and FHIR Evidence]([screenshots/docker_fhir_running.png](https://github.com/sheetaljadur27/stateful-data-warehouse/tree/main/Screenshots))
 
 
