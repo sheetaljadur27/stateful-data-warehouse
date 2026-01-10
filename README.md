@@ -62,5 +62,25 @@ to ensure a consistent and reproducible runtime environment.
 
 ### Docker & FHIR Server Running
 ![Docker and FHIR Evidence]([screenshots/docker_fhir_running.png](https://github.com/sheetaljadur27/stateful-data-warehouse/tree/main/Screenshots))
+## Rulebook: FHIR Shorthand (FSH) Profiles
+
+The Rulebook defines validation rules for our FHIR resources using **FHIR Shorthand (FSH)**. 
+We created profiles for both **Patient** and **Observation** resources.
+
+**Profiles Created:**
+- `PatientProfile.fsh` → Defines required fields like name, birthDate, and gender.
+- `ObservationProfile.fsh` → Defines clinical observations such as vital signs and lab results.
+
+**FSH Tool Compilation:**
+- The FSH files were compiled using the class FSH tool.
+- Compilation generates JSON StructureDefinitions, which are used by the HAPI FHIR server to validate incoming resources.
+- Generated JSON files are stored in `/Rulebook/generated/`.
+
+**Evidence:**
+![FSH Compilation Success - Patient](Screenshots/patient_fsh.png)
+![FSH Compilation Success - Observation](Screenshots/observation_fsh.png)
+
+
+
 
 
