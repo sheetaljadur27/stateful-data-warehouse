@@ -58,5 +58,9 @@ to ensure a consistent and reproducible runtime environment.
 **Evidence:**
 - Docker container running successfully.
 - HAPI FHIR server accessible at the mapped host URL.
+- ## Evidence
+
+### Docker & FHIR Server Running
+![Docker and FHIR Evidence](screenshots/docker_fhir_running.png)
 
 
