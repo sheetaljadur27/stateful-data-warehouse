@@ -1,3 +1,15 @@
+# Stateful Data Warehouse Project
+## Project Overview
+
+This project demonstrates the design of a stateful data warehouse using a 
+layered repository structure. The objective is to show how data moves from 
+raw ingestion to processed, analytics-ready formats while maintaining clarity, 
+traceability, and scalability.
+
+The repository is structured to reflect real-world data warehousing practices 
+rather than a simple collection of scripts or files.
+
+
 ## Repository Structure
 This repository is designed following a stateful data warehouse architecture. 
 Instead of being a simple code dump, it organizes data across multiple layers to 
