@@ -105,6 +105,10 @@ https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Translator/sample_data.csv
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/T%20SS%202.png
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/T%20SS%20-3%20.png
+## Documentation
+
+Detailed documentation including Source-to-Target Mapping, architecture,
+data flow, and conclusions are available in the `/Documentation` folder.
 
 
 
