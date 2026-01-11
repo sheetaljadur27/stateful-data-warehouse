@@ -109,6 +109,19 @@ https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/
 
 Detailed documentation including Source-to-Target Mapping, architecture,
 data flow, and conclusions are available in the `/Documentation` folder.
+## Architect’s Narrative
+
+This repository represents more than a code implementation; it reflects the architectural decisions and technical challenges involved in migrating legacy healthcare data into a validated, stateful FHIR warehouse.
+
+### 1. The Container Advantage
+One of the primary challenges was managing environment consistency across different machines. By using Docker to run the HAPI FHIR server, dependency conflicts (“dependency hell”) were eliminated. Containerization ensured that all students ran the same server version, database configuration, and port mappings, regardless of the underlying operating system or hardware (“metal”). This enabled reproducible deployments and simplified troubleshooting.
+
+### 2. Semantic Integrity and Magic Strings
+Legacy data often contains ambiguous “magic strings” such as gender values represented as “M/F”. To preserve semantic integrity, these values were not hard-coded. Instead, a FHIR ConceptMap was implemented, and the `$translate` operation was used to map legacy codes to standard FHIR values such as `male` and `female`. This approach ensures scalability, maintainability, and clinical correctness as new codes are introduced.
+
+### 3. Transactional Atomicity
+To prevent orphaned clinical data, Patient and Observation resources were created using FHIR Transaction Bundles. UUID-based fullUrl references were used to link related resources within a single transaction. This ensured atomic execution — either all resources were created successfully, or none were — maintaining referential integrity and consistency within the FHIR server.
+
 
 
 
