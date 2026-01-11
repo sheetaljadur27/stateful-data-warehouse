@@ -103,7 +103,7 @@ transaction bundle, preventing orphaned clinical data.
 ![Transaction Bundle](Screenshots/transaction_bundle.png)
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/translator%20-%20ss%201.png
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Translator/sample_data.csv
-
+https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/T%20SS%202.png
 
 
 
