@@ -1,0 +1,3 @@
+patient_id,first_name,last_name,gender,dob,obs_code,obs_value,obs_date
+P001,John,Doe,M,1985-04-12,HB,13.5,2024-01-15
+P002,Jane,Smith,F,1990-09-20,HB,11.8,2024-01-16
