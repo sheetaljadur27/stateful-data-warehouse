@@ -101,6 +101,7 @@ transaction bundle, preventing orphaned clinical data.
 ![Sample CSV](Screenshots/sample_csv.png)
 ![Translator Script](Screenshots/translator_code.png)
 ![Transaction Bundle](Screenshots/transaction_bundle.png)
+https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshots/translator%20-%20ss%201.png
 
 
 
