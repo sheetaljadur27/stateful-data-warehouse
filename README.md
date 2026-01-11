@@ -123,5 +123,3 @@ Legacy data often contains ambiguous “magic strings” such as gender values r
 To prevent orphaned clinical data, Patient and Observation resources were created using FHIR Transaction Bundles. UUID-based fullUrl references were used to link related resources within a single transaction. This ensured atomic execution — either all resources were created successfully, or none were — maintaining referential integrity and consistency within the FHIR server.
 
 
-
-
