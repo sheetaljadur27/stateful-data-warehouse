@@ -82,6 +82,26 @@ We created profiles for both **Patient** and **Observation** resources.
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143705.png
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143801.png
 https://github.com/sheetaljadur27/stateful-data-warehouse/blob/main/Screenshot%202026-01-10%20143921.png
+## Translator: Legacy Data Migration Layer
+
+The Translator layer converts flat, legacy CSV data into FHIR-compliant
+resources for ingestion into the warehouse.
+
+**Responsibilities:**
+- Map legacy columns to FHIR elements
+- Handle magic strings (M/F → male/female)
+- Generate UUIDs for resource linkage
+- Create Transaction Bundles to ensure atomic ingestion
+
+**Transactional Atomicity:**
+Patient and Observation resources are submitted together in a single
+transaction bundle, preventing orphaned clinical data.
+
+**Evidence:**
+![Sample CSV](Screenshots/sample_csv.png)
+![Translator Script](Screenshots/translator_code.png)
+![Transaction Bundle](Screenshots/transaction_bundle.png)
+
 
 
 
